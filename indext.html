@@ -20,16 +20,17 @@
         .containers {
             width: 1280px;
             margin: auto;
+            background-color: brown;
         }
     </style>
 </head>
 
 <body>
-    <!-- Banner Section -->
+    <!-- Navbar Section -->
     <header>
-        <nav>
+        <nav class="bg-yellow-50">
             <div class="containers">
-                <div class="navbar bg-base-100">
+                <div class="navbar">
                     <div class="navbar-start">
                         <div class="dropdown">
                             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -40,7 +41,7 @@
                                 </svg>
                             </div>
                             <ul tabindex="0"
-                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
                                 <li><a>Products</a></li>
                                 <li><a>Services</a></li>
                                 <li><a>Contact Us</a></li>
@@ -56,12 +57,12 @@
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1">
-                            <li><a>Products</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Contact Us</a></li>
+                            <li><a class="font-semibold text-xl">Products</a></li>
+                            <li><a class="font-semibold text-xl">Services</a></li>
+                            <li><a class="font-semibold text-xl">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="navbar-end">
+                    <div class="navbar-end gap-5">
                         <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -74,8 +75,8 @@
                                     d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                             </svg>
                         </a>
-                        <a class="btn w-25">Login</a>
-                        <a class="btn bg-green-600 text-white w-30">Register</a>
+                        <a class="btn w-25 text-xl rounded-lg bg-yellow-50 border-2 border-green-600">Login</a>
+                        <a class="btn bg-green-600 text-white w-30 text-xl rounded-lg">Register</a>
                     </div>
                 </div>
             </div>
@@ -83,91 +84,320 @@
     </header>
     <main>
         <!-- Banner Section -->
-        <section>
-            <div class="containers">
-                <div class="m-auto w-200">
-                    <h1 class="text-center">Freshness You Can
-                        Count On, Prices You’ll Love!</h1>
-                    <p></p>
+        <section class="bg-yellow-50">
+            <div class="md:containers">
+                <div class="m-auto">
+                    <h1 class="text-center text-6xl font-semibold">Freshness <span class="text-green-600">You Can <br>
+                            Count</span> On, Prices You’ll Love!</h1>
+                    <p class="text-center text-xl mt-5 font-normal">Shop your daily essentials at unbeatable prices.
+                        From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
                     <img class="w-full h-full" src="pictures/hero-vegetables.png" alt="">
                 </div>
             </div>
         </section>
         <!-- Services Section -->
         <section>
-            <div class="containers">
-                <h1>Services</h1>
+            <div class="containers mt-[80px]">
+                <h1 class="text-4xl font-semibold text-green-600 mb-[40px]">Services</h1>
                 <div class="flex justify-between">
-                    <div class="bg-green-600">
+                    <div class="bg-red-50 text-center rounded-xl">
                         <div class="p-10 w-100">
-                            <img src="pictures/service.png" alt="">
-                            <h1>24/7 Services </h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            <div class="flex justify-center"><img src="pictures/service.png" alt=""></div>
+                            <h1 class="text-2xl font-semibold m-3">24/7 Services </h1>
+                            <p class="text-xl">"Our 24/7 services ensure round-the-clock support, anytime, anywhere.
+                                Count on us for reliability, efficiency, and seamless assistance whenever you need it!"
                             </p>
                         </div>
                     </div>
-                    <div class="bg-green-600">
+                    <div class="bg-blue-50 text-center rounded-xl">
                         <div class="p-10 w-100">
-                            <img src="pictures/delivery.png" alt="">
-                            <h1>Fast Delivery</h1>
-                            <p></p>
+                            <div class="flex justify-center"><img src="pictures/delivery.png" alt=""></div>
+                            <h1 class="text-2xl font-semibold m-3">Fast Delivery</h1>
+                            <p class="text-xl">"Experience lightning-fast delivery, ensuring your orders reach you in no
+                                time.
+                                Speed, reliability, and efficiency—because every second counts!"</p>
                         </div>
                     </div>
-                    <div class="bg-green-600">
+                    <div class="bg-green-50 text-center rounded-xl">
                         <div class="p-10 w-100">
-                            <img src="pictures/healthy.png" alt="">
-                            <h1>Healthy Products</h1>
-                            <p></p>
+                            <div class="flex justify-center"><img src="pictures/healthy.png" alt=""></div>
+                            <h1 class="text-2xl font-semibold m-3">Healthy Products</h1>
+                            <p class="text-xl mt-10px">"Our healthy products are crafted with natural ingredients for a
+                                better you.
+                                Nourish your body with quality, wellness, and purity in every bite!"</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Popular Section -->
-        <section>
-            <div class="containers">
-                <h1>Popular Products</h1>
-                <div class="flex gap-5">
+        <section class="bg-yellow-50 mt-[80px]">
+            <div class="containers ">
+                <h1 class="text-4xl font-semibold text-green-600 mt-[60px]">Popular Products</h1>
+                <div class="flex gap-5 m-8">
                     <div>
-                        <div class="bg-green-400">
+                        <div class="bg-gradient-to-br from-green-600 to-white w-md rounded-xl">
                             <div>
-                                <h1>30% Off</h1>
-                                <p>Discover a world of treat, toy and essentials handpicked for</p>
+                                <h1 class="text-5xl font-semibold text-white p-5">30% Off</h1>
+                                <p class="text-lg p-4">"Grab an amazing 30% discount for a limited time only!
+                                    Shop now and save big on your favorite products!"</p>
                             </div>
                             <div class="flex">
-                                <div><button class="bg-gray-300">Buy Now!</button></div>
+                                <div class="p-4"><button class="bg-white btn text-xl">Buy Now!</button></div>
                                 <div class="ml-[-35px]"><img src="pictures/vegetable-offer.png" alt=""></div>
                             </div>
                         </div>
                     </div>
                     <div class="grid grid-cols-3 gap-10">
-                        <div class="bg-yellow-400 flex">
-                            <div><img src="pictures/Onion.jpg" alt=""></div>
-                            <div>
-                                <div class="flex">
-                                    <i class="fa-solid fa-star"></i>
-                                    <p>4.5</p>
+                        <!-- Mini Box 1-->
+                        <div class="bg-white flex gap-3 rounded-xl items-center">
+                            <div><img class="w-20 h-20 rounded-xl" src="pictures/Onion.jpg" alt=""></div>
+                            <div class="p-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>5.5</p>
                                 </div>
-                                <h1>Onion</h1>
-                                <h1>100$</h1>
+                                <h1 class="text-xl font-medium">Onion</h1>
+                                <h1>50 Taka/kg</h1>
                             </div>
 
                         </div>
-                        <div class="bg-yellow-400">hello</div>
-                        <div class="bg-yellow-400">hello</div>
-                        <div class="bg-yellow-400">hello</div>
-                        <div class="bg-yellow-400">hello</div>
-                        <div class="bg-yellow-400">hello</div>
-                        <div class="bg-yellow-400">hello</div>
-                        <div class="bg-yellow-400">hello</div>
-                        <div class="bg-yellow-400">hello</div>
+                        <!-- Mini Box 2-->
+                        <div class="bg-white flex gap-3 rounded-xl items-center">
+                            <div><img class="w-20 h-20 rounded-xl" src="pictures/Potato.jpeg" alt=""></div>
+                            <div class="p-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>5.5</p>
+                                </div>
+                                <h1 class="text-xl font-medium">Potato</h1>
+                                <h1>40 Taka/kg</h1>
+                            </div>
+                        </div>
+                        <!-- Mini Box 3-->
+                        <div class="bg-white flex gap-3 rounded-xl items-center">
+                            <div><img class="w-20 h-20 rounded-xl" src="pictures/Capsicum.jpg" alt=""></div>
+                            <div class="p-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>5.0</p>
+                                </div>
+                                <h1 class="text-xl font-medium">Capsicum</h1>
+                                <h1>150 Taka/pice</h1>
+                            </div>
+                        </div>
+                        <!-- Mini Box 4-->
+                        <div class="bg-white flex gap-3 rounded-xl items-center">
+                            <div><img class="w-20 h-20 rounded-xl" src="pictures/Carot.jpg" alt=""></div>
+                            <div class="p-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.0</p>
+                                </div>
+                                <h1 class="text-xl font-medium">Carrot</h1>
+                                <h1>60 Taka/kg</h1>
+                            </div>
+                        </div>
+                        <!-- Mini Box 5-->
+                        <div class="bg-white flex gap-3 rounded-xl items-center">
+                            <div><img class="w-20 h-20 rounded-xl" src="pictures/Cilli.webp" alt=""></div>
+                            <div class="p-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <h1 class="text-xl font-medium">Green Chilli</h1>
+                                <h1>25 Taka/kg</h1>
+                            </div>
+                        </div>
+                        <!-- Mini Box 6-->
+                        <div class="bg-white flex gap-3 rounded-xl items-center">
+                            <div><img class="w-20 h-20 rounded-xl" src="pictures/Fulkopi.jpg" alt=""></div>
+                            <div class="p-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.1</p>
+                                </div>
+                                <h1 class="text-xl font-medium">Cauliflower</h1>
+                                <h1>55 Taka/pice</h1>
+                            </div>
+                        </div>
+                        <!-- Mini Box 7-->
+                        <div class="bg-white flex gap-3 rounded-xl items-center">
+                            <div><img class="w-20 h-20 rounded-xl" src="pictures/oil.webp" alt=""></div>
+                            <div class="p-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>5.5</p>
+                                </div>
+                                <h1 class="text-xl font-medium">Cooking Oil</h1>
+                                <h1>450 Taka/5kg</h1>
+                            </div>
+                        </div>
+                        <!-- Mini Box 8-->
+                        <div class="bg-white flex gap-3 rounded-xl items-center">
+                            <div><img class="w-20 h-20 rounded-xl" src="pictures/Tomato.jpeg" alt=""></div>
+                            <div class="p-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.4</p>
+                                </div>
+                                <h1 class="text-xl font-medium">Tomato</h1>
+                                <h1>80 Taka/kg</h1>
+                            </div>
+                        </div>
+                        <!-- Mini Box 9-->
+                        <div class="bg-white flex gap-3 rounded-xl items-center">
+                            <div><img class="w-20 h-20 rounded-xl" src="pictures/Seem.jpg" alt=""></div>
+                            <div class="p-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>3.5</p>
+                                </div>
+                                <h1 class="text-xl font-medium">Bean</h1>
+                                <h1>45 Taka/kg</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
+        <!-- Extra Section Best Sell Section -->
+        <section>
+            <div class="containers mt-[80px]">
+                <h1 class="text-4xl font-semibold text-green-600 mb-[40px]">Best Sell <br> of the month</h1>
+                <div class="stats shadow w-full">
+                    <div class="stat w-full">
+                        <div class="stat-figure text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-8 w-8 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="stat-title text-lg text-black font-semibold">Total Likes</div>
+                        <div class="stat-value text-primary">25K</div>
+                        <div class="stat-desc text-lg text-black">23% more than last month</div>
+                    </div>
 
+                    <div class="stat">
+                        <div class="stat-figure text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                        <div class="stat-title text-lg text-black font-semibold">Total Sell</div>
+                        <div class="stat-value text-secondary text-yellow-300">20k</div>
+                        <div class="stat-desc text-lg text-black">20% more than last month</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-figure text-secondary">
+                            <div class="avatar">
+                                <div class="w-24 rounded">
+                                    <img src="pictures/OIL.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-value">Cooking Oil</div>
+                        <div class="stat-title text-lg text-black">Ordered</div>
+                        <div class="stat-desc text-secondary text-lg">Over all the country</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Arrival & Offers Section -->
+        <section>
+            <div class="containers mt-[60px] pb-[350px]">
+                <h1 class="text-4xl font-semibold text-green-600 mb-[40px]">Arrival & Offers</h1>
+                <div class="flex gap-5">
+                    <div class="flex bg-green-700 rounded-3xl w-[850px]">
+                        <div class="flex flex-col justify-center pl-5">
+                            <img class="w-20 h-20" src="pictures/Square logo.webp" alt="">
+                            <button class="btn text-2xl bg-green-400 text-white border-green-400 w-80">Cook Exotic
+                                Dishes</button>
+                            <h1 class="text-4xl text-white">Up to <span class="font-extrabold">20% OFF</span></h1>
+                        </div>
+                        <div>
+                            <img class="w-70 h-110" src="pictures/Chashi-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex bg-red-700 rounded-3xl">
+                        <div class="flex flex-col justify-center pl-5">
+                            <img class="w-20 h-20" src="pictures/Pran logo2.png" alt="">
+                            <button class="btn text-2xl bg-red-400 text-white border-red-400 w-60">World’s No.1
+                                Rice</button>
+                            <h1 class="text-4xl text-white">Up to <span class="font-extrabold">40% OFF</span></h1>
+                        </div>
+                        <div>
+                            <img class="w-100 h-150" src="pictures/Rice.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Get News Section -->
+        <section>
+            <div class="containers relative">
+                <div class="w-full flex items-center bg-gray-200 absolute bottom-[-230px] z-[999] p-12">
+                    <div><img src="pictures/vegetable-busket.png" alt=""></div>
+                    <div>
+                        <h1>Get Grocery News!</h1>
+                        <p class="mt-[30px]">Get Grocery News! Stay updated with the latest grocery trends, deals, and
+                            industry insights. 🛒✨
+                        </p>
+                        <form class="mt-[30px]">
+                            <label class="input input-bordered flex items-center gap-2">
+                                <input type="text" class="grow" placeholder="Enter email" />
+                            </label>
+                            <button class="btn mt-[30px]">Subscribe</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- Small device-sm, Smallest device-max-sm, Medium-md, desktop-lg, XL -->
+    <footer class="bg-green-600 text-white py-10 px-6 md:px-20 pt-[350px]">
+        <div
+            class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
+
+            <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
+                <div class="flex items-center space-x-3">
+                    <img class="w-16 h-16" src="pictures/leaf.png" alt="Logo">
+                    <h1 class="text-2xl font-extrabold text-white leading-tight">Organic <br> Foods</h1>
+                </div>
+                <p class="text-base font-medium max-w-md">
+                    "Enjoy the goodness of organic foods, grown naturally without chemicals. <br>
+                    Pure, healthy, and sustainable—better for you and the planet!"
+                </p>
+            </div>
+
+
+            <div class="text-center md:text-center flex flex-1 justify-center">
+                <ul class="text-lg font-medium space-y-2 mt-20">
+                    <li><a href="#" class="hover:underline">Products</a></li>
+                    <li><a href="#" class="hover:underline">Services</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <div class="text-center md:text-left md:self-end">
+                <h1 class="text-lg font-medium mb-2">Follow Us</h1>
+                <div class="flex gap-4 justify-center">
+                    <img class="w-8 h-8" src="pictures/fb.png" alt="Facebook">
+                    <img class="w-8 h-8" src="pictures/insta (1).jpg" alt="Instagram">
+                    <img class="w-8 h-8" src="pictures/in (1).jpg" alt="LinkedIn">
+                    <img class="w-8 h-8" src="pictures/you (1).png" alt="YouTube">
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
